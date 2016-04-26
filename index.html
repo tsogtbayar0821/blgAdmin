@@ -1,0 +1,317 @@
+<!DOCTYPE html><!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 4.5.3
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+--><!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]--><!--[if !IE]><!--><html lang=en ng-app=uglymonaAdmin><!--<![endif]--><!-- BEGIN HEAD --><head><meta charset=utf-8><title>Ugly Mona Admin</title><meta http-equiv=X-UA-Compatible content="IE=edge"><meta content="width=device-width,initial-scale=1" name=viewport><meta content="" name=description><meta content="" name=author><link rel=stylesheet href=styles/vendor-f2bd45d897.css><link rel=stylesheet href=styles/app-2de34c8046.css><!-- BEGIN GLOBAL MANDATORY STYLES --><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel=stylesheet type=text/css><link href=../assets/global/plugins/font-awesome/css/font-awesome.min.css rel=stylesheet type=text/css><link href=../assets/global/plugins/simple-line-icons/simple-line-icons.min.css rel=stylesheet type=text/css><!-- <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> --><link href=../assets/global/plugins/uniform/css/uniform.default.css rel=stylesheet type=text/css><!-- <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" /> --><!-- END GLOBAL MANDATORY STYLES --><!-- BEGIN PAGE LEVEL PLUGINS --><!-- <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" /> --><link href=../assets/global/plugins/morris/morris.css rel=stylesheet type=text/css><link href=../assets/global/plugins/fullcalendar/fullcalendar.min.css rel=stylesheet type=text/css><link href=../assets/global/plugins/jqvmap/jqvmap/jqvmap.css rel=stylesheet type=text/css><!-- END PAGE LEVEL PLUGINS --><!-- BEGIN THEME GLOBAL STYLES --><link href=../assets/global/css/components.min.css rel=stylesheet id=style_components type=text/css><link href=../assets/global/css/plugins.min.css rel=stylesheet type=text/css><!-- END THEME GLOBAL STYLES --><!-- BEGIN THEME LAYOUT STYLES --><link href=../assets/layouts/layout2/css/layout.min.css rel=stylesheet type=text/css><link href=../assets/layouts/layout2/css/themes/blue.min.css rel=stylesheet type=text/css id=style_color><link href=../assets/layouts/layout2/css/custom.min.css rel=stylesheet type=text/css><!-- END THEME LAYOUT STYLES --><link rel="shortcut icon" href=favicon.ico><!-- END HEAD --><link href=../assets/pages/css/login-2.min.css rel=stylesheet type=text/css></head><body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid"><!-- BEGIN HEADER --><div class="page-header navbar navbar-fixed-top"><!-- BEGIN HEADER INNER --><div class=page-header-inner><!-- BEGIN LOGO --><div class=page-logo><a href=""><img src=../assets/layouts/layout2/img/logo-default.png alt=logo class=logo-default></a><div class="menu-toggler sidebar-toggler"><!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header --></div></div><!-- END LOGO --><!-- BEGIN RESPONSIVE MENU TOGGLER --> <a href="" class="menu-toggler responsive-toggler" data-toggle=collapse data-target=.navbar-collapse></a><!-- END RESPONSIVE MENU TOGGLER --><!-- BEGIN PAGE ACTIONS --><!-- DOC: Remove "hide" class to enable the page header actions --><div class=page-actions><div class=btn-group><button type=button class="btn btn-circle btn-outline red dropdown-toggle" data-toggle=dropdown data-hover=dropdown data-close-others=true><i class="fa fa-plus"></i>&nbsp; <span class="hidden-sm hidden-xs">New&nbsp;</span>&nbsp; <i class="fa fa-angle-down"></i></button><ul class=dropdown-menu role=menu><li><a href="" data-toggle=modal data-target=#blogCreatModal><i class=icon-docs></i> New Post</a></li><li><a href="" data-toggle=modal data-target=#imageUploadModal><i class=icon-share></i> Image Upload</a></li><li><a href="" data-toggle=modal data-target=#commentAddModal><i class=icon-flag></i>New Comments</a></li><li class=divider></li><li><a href=""><i class=icon-users></i> Feedbacks <span class="badge badge-danger">2</span></a></li></ul></div></div><!-- END PAGE ACTIONS --><!-- BEGIN PAGE TOP --><div class=page-top><!-- BEGIN HEADER SEARCH BOX --><!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box --><form class="search-form search-form-expanded" action=page_general_search_3.html method=GET><div class=input-group><input type=text class=form-control placeholder=Search... name=query> <span class=input-group-btn><a href="" class="btn submit"><i class=icon-magnifier></i></a></span></div></form><!-- END HEADER SEARCH BOX --><!-- BEGIN TOP NAVIGATION MENU --><div class=top-menu><ul class="nav navbar-nav pull-right"><!-- BEGIN NOTIFICATION DROPDOWN --><!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte --><!-- <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-bell"></i>
+                                <span class="badge badge-default"> 7 </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3>
+                                            <span class="bold">12 pending</span> notifications</h3>
+                                    <a href="page_user_profile_1.html">view all</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="">
+                                                <span class="time">just now</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-success">
+                                                            <i class="fa fa-plus"></i>
+                                                        </span> New user registered. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">3 mins</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Server #12 overloaded. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">10 mins</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Server #2 not responding. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">14 hrs</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> Application error. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">2 days</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Database overloaded 68%. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">3 days</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> A user IP blocked. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">4 days</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Storage Server #4 not responding dfdfdfd. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">5 days</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> System Error. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="time">9 days</span>
+                                                <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Storage server failed. </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> --><!-- END NOTIFICATION DROPDOWN --><!-- BEGIN INBOX DROPDOWN --><!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte --><!-- <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-envelope-open"></i>
+                                <span class="badge badge-default"> 4 </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3>You have
+                                            <span class="bold">7 New</span> Messages</h3>
+                                    <a href="app_inbox.html">view all</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="">
+                                                <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                <span class="time">Just Now </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                <span class="time">16 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                        <span class="from"> Bob Nilson </span>
+                                                <span class="time">2 hrs </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                <span class="time">40 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                <span class="time">46 mins </span>
+                                                </span>
+                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> --><!-- END INBOX DROPDOWN --><!-- BEGIN TODO DROPDOWN --><!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte --><!-- <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-calendar"></i>
+                                <span class="badge badge-default"> 3 </span>
+                            </a>
+                            <ul class="dropdown-menu extended tasks">
+                                <li class="external">
+                                    <h3>You have
+                                            <span class="bold">12 pending</span> tasks</h3>
+                                    <a href="app_todo.html">view all</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">New release v1.2 </span>
+                                                <span class="percent">30%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">40% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">Application deployment</span>
+                                                <span class="percent">65%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">65% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">Mobile app release</span>
+                                                <span class="percent">98%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">98% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">Database migration</span>
+                                                <span class="percent">10%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">10% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">Web server upgrade</span>
+                                                <span class="percent">58%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">58% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">Mobile development</span>
+                                                <span class="percent">85%</span>
+                                                </span>
+                                                <span class="progress">
+                                                        <span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">85% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="task">
+                                                        <span class="desc">New UI release</span>
+                                                <span class="percent">38%</span>
+                                                </span>
+                                                <span class="progress progress-striped">
+                                                        <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">38% Complete</span>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> --><!-- END TODO DROPDOWN --><!-- BEGIN USER LOGIN DROPDOWN --><!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte --><li class="dropdown dropdown-user"><a href="" class=dropdown-toggle data-toggle=dropdown data-hover=dropdown data-close-others=true><img alt="" class=img-circle src=../assets/layouts/layout2/img/avatar3_small.jpg> <span class="username username-hide-on-mobile">Daniel </span><i class="fa fa-angle-down"></i></a><ul class="dropdown-menu dropdown-menu-default"><!-- <li>
+                                    <a href="">
+                                        <i class="icon-user"></i> My Profile </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-calendar"></i> My Calendar </a>
+                                </li>
+                                <li>
+                                    <a href="app_inbox.html">
+                                        <i class="icon-envelope-open"></i> My Inbox
+                                        <span class="badge badge-danger"> 3 </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-rocket"></i> My Tasks
+                                        <span class="badge badge-success"> 7 </span>
+                                    </a>
+                                </li> --><li class=divider></li><!-- <li>
+                                    <a href="">
+                                        <i class="icon-lock"></i> Lock Screen </a>
+                                </li> --><li><a ui-sref=login><i class=icon-key></i> Log Out</a></li></ul></li><!-- END USER LOGIN DROPDOWN --><!-- BEGIN QUICK SIDEBAR TOGGLER --><!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte --><li class="dropdown dropdown-extended quick-sidebar-toggler"><span class=sr-only>Toggle Quick Sidebar</span> <i class=icon-logout></i></li><!-- END QUICK SIDEBAR TOGGLER --></ul></div><!-- END TOP NAVIGATION MENU --></div><!-- END PAGE TOP --></div><!-- END HEADER INNER --></div><!-- END HEADER --><!-- BEGIN HEADER & CONTENT DIVIDER --><div class=clearfix></div><!-- END HEADER & CONTENT DIVIDER --><!-- BEGIN CONTAINER --><div class=page-container><!-- BEGIN SIDEBAR --><div class=page-sidebar-wrapper ng-if=$root.isLoged><!-- END SIDEBAR --><!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing --><!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed --><div class="page-sidebar navbar-collapse collapse"><!-- BEGIN SIDEBAR MENU --><!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) --><!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode --><!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode --><!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing --><!-- DOC: Set data-keep-expand="true" to keep the submenues expanded --><!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed --><ul class="page-sidebar-menu page-header-fixed page-sidebar-menu-hover-submenu" data-keep-expanded=false data-auto-scroll=true data-slide-speed=200 id=page-sidebar-menu><li class=nav-item ng-class="{active: $root.isActive('dashboard')}"><a ui-sref=dashboard class="nav-link nav-toggle"><i class=icon-home></i> <span class=title>Dashboard</span><!-- <span class="selected"></span> --> <span class="arrow open"></span></a><ul class=sub-menu><li class="nav-item start open"><a href="" class=nav-link><i class=icon-bar-chart></i> <span class=title>Dashboard 1</span> <span class=selected></span></a></li><li class="nav-item start"><a href="" class=nav-link><i class=icon-bulb></i> <span class=title>Dashboard 2</span> <span class="badge badge-success">1</span></a></li><li class="nav-item start"><a href="" class=nav-link><i class=icon-graph></i> <span class=title>Dashboard 3</span> <span class="badge badge-danger">5</span></a></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('home')}"><a ui-sref=home class="nav-link nav-toggle"><i class=icon-diamond></i> <span class=title>Home</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>Color Library</span></a></li><li class=nav-item><a href="" class="nav-link nav-toggle"><span class=title>Page Progress Bar</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link>Flash</a></li><li class=nav-item><a href="" class=nav-link>Big Counter</a></li></ul></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('beauty')}"><a ui-sref=beauty class="nav-link nav-toggle"><i class=icon-puzzle></i> <span class=title>Beauty In The City</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>Date & Time Pickers</span></a></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('romantic')}"><a ui-sref=romantic class="nav-link nav-toggle"><i class=icon-settings></i> <span class=title>The Romantic Power of Movies</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>Bootstrap Form<br>Controls</span></a></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('vlog')}"><a ui-sref=vlog class="nav-link nav-toggle"><i class=icon-bulb></i> <span class=title>Vlog Romance</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>Steps</span></a></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('photograph')}"><a ui-sref=photograph class="nav-link nav-toggle"><i class=icon-briefcase></i> <span class=title>Photographs and Love</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class="nav-link nav-toggle"><span class=title>Static Tables</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link>Basic Tables</a></li><li class=nav-item><a href="" class=nav-link>Responsive Tables</a></li><li class=nav-item><a href="" class=nav-link>Bootstrap Table</a></li></ul></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('life')}"><a ui-sref=life class="nav-link nav-toggle"><i class=icon-wallet></i> <span class=title>Life In New York City</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>Boxed Portlets</span></a></li></ul></li><li class=nav-item ng-class="{active: $root.isActive('flip')}"><a ui-sref=flip class="nav-link nav-toggle"><i class=icon-bar-chart></i> <span class=title>THE FLIPBOOK OF MONA</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href="" class=nav-link><span class=title>amChart</span></a></li></ul></li><li class=nav-item><a href="" class="nav-link nav-toggle"><i class=icon-pointer></i> <span class=title>Maps</span> <span class=arrow></span></a><ul class=sub-menu><li class=nav-item><a href=maps_google class=nav-link><span class=title>Google Maps</span></a></li></ul></li></ul><!-- END SIDEBAR MENU --></div><!-- END SIDEBAR --></div><!-- END SIDEBAR --><!-- BEGIN CONTENT --><div class=page-content-wrapper ui-view></div><!-- END CONTENT --></div><!-- END CONTAINER --><script src=scripts/vendor-cb78d24fc3.js></script><script src=scripts/app-e1e61e7cfb.js></script><!-- END FOOTER --><!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script> 
+    <![endif]--><!-- BEGIN CORE PLUGINS --><!-- // <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script> --><!-- // <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> --><script src=../assets/global/plugins/js.cookie.min.js type=text/javascript></script><script src=../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js type=text/javascript></script><script src=../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js type=text/javascript></script><script src=../assets/global/plugins/jquery.blockui.min.js type=text/javascript></script><script src=../assets/global/plugins/uniform/jquery.uniform.min.js type=text/javascript></script><!-- // <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> --><!-- END CORE PLUGINS --><!-- BEGIN PAGE LEVEL PLUGINS --><script src=../assets/global/plugins/moment.min.js type=text/javascript></script><!-- // <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script> --><script src=../assets/global/plugins/morris/morris.min.js type=text/javascript></script><script src=../assets/global/plugins/morris/raphael-min.js type=text/javascript></script><script src=../assets/global/plugins/counterup/jquery.waypoints.min.js type=text/javascript></script><script src=../assets/global/plugins/counterup/jquery.counterup.min.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/amcharts.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/serial.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/pie.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/radar.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/themes/light.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/themes/patterns.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amcharts/themes/chalk.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/ammap/ammap.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js type=text/javascript></script><script src=../assets/global/plugins/amcharts/amstockcharts/amstock.js type=text/javascript></script><script src=../assets/global/plugins/fullcalendar/fullcalendar.min.js type=text/javascript></script><script src=../assets/global/plugins/flot/jquery.flot.min.js type=text/javascript></script><script src=../assets/global/plugins/flot/jquery.flot.resize.min.js type=text/javascript></script><script src=../assets/global/plugins/flot/jquery.flot.categories.min.js type=text/javascript></script><script src=../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js type=text/javascript></script><script src=../assets/global/plugins/jquery.sparkline.min.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js type=text/javascript></script><script src=../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js type=text/javascript></script><!-- END PAGE LEVEL PLUGINS --><!-- BEGIN THEME GLOBAL SCRIPTS --><script src=../assets/global/scripts/app.min.js type=text/javascript></script><!-- END THEME GLOBAL SCRIPTS --><!-- BEGIN PAGE LEVEL SCRIPTS --><script src=../assets/pages/scripts/dashboard.min.js type=text/javascript></script><!-- END PAGE LEVEL SCRIPTS --><!-- BEGIN THEME LAYOUT SCRIPTS --><script src=../assets/layouts/layout2/scripts/layout.min.js type=text/javascript></script><script src=../assets/layouts/layout2/scripts/demo.min.js type=text/javascript></script><script src=../assets/layouts/global/scripts/quick-sidebar.min.js type=text/javascript></script><!-- END THEME LAYOUT SCRIPTS --><!-- image Dialog start --><div id=imageUploadModal class="modal fade" role=dialog ng-controller=BlogCreatController><div class="modal-dialog bmd-modal-dialog"><div class="modal-content bmd-border-success"><div class="modal-header bmd-bg-success"><button type=button class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss=modal aria-hidden=true>×</button><h4 class="modal-title bmd-text-green-100">Image Upload</h4></div><div class=modal-body><div class=row><div nv-file-drop="" uploader=uploader><div class=row><div class=col-md-3><h3>Select Image</h3><div ng-show=uploader.isHTML5><!-- <div class="well my-drop-zone" nv-file-over="" uploader="uploader">Base drop zone</div> --><div nv-file-drop="" uploader=uploader options="{ url: '/foo' }"><div nv-file-over="" uploader=uploader over-class=another-file-over-class class="well my-drop-zone">drop zone with its own settings</div></div></div><input type=file nv-file-select="" uploader=uploader class=bmd-ripple multiple><br></div><div class=col-md-9 style="margin-bottom: 40px"><h2>Uploads only images (with canvas preview)</h2><h3>The queue</h3><p>Queue length: {{ uploader.queue.length }}</p><table class=table><thead><tr><th width=50%>Name</th><th ng-show=uploader.isHTML5>Size</th><th ng-show=uploader.isHTML5>Progress</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr ng-repeat="item in uploader.queue"><td><strong>{{ item.file.name }}</strong><div ng-show=uploader.isHTML5 ng-thumb="{ file: item._file, height: 100 }"></div></td><td ng-show=uploader.isHTML5 nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td><td ng-show=uploader.isHTML5><div class=progress style="margin-bottom: 0"><div class=progress-bar role=progressbar ng-style="{ 'width': item.progress + '%' }"></div></div></td><td class=text-center><span ng-show=item.isSuccess><i class="glyphicon glyphicon-ok"></i></span> <span ng-show=item.isCancel><i class="glyphicon glyphicon-ban-circle"></i></span> <span ng-show=item.isError><i class="glyphicon glyphicon-remove"></i></span></td><td nowrap><button type=button class="btn btn-success btn-xs" ng-click=item.upload() ng-disabled="item.isReady || item.isUploading || item.isSuccess"><span class="glyphicon glyphicon-upload"></span> Upload</button> <button type=button class="btn btn-warning btn-xs" ng-click=item.cancel() ng-disabled=!item.isUploading><span class="glyphicon glyphicon-ban-circle"></span> Cancel</button> <button type=button class="btn btn-danger btn-xs" ng-click=item.remove()><span class="glyphicon glyphicon-trash"></span> Remove</button></td></tr></tbody></table><div><div>Queue progress:<div class=progress><div class=progress-bar role=progressbar ng-style="{ 'width': uploader.progress + '%' }"></div></div></div><button type=button class="btn btn-success btn-s" ng-click=uploader.uploadAll() ng-disabled=!uploader.getNotUploadedItems().length><span class="glyphicon glyphicon-upload"></span> Upload all</button> <button type=button class="btn btn-warning btn-s" ng-click=uploader.cancelAll() ng-disabled=!uploader.isUploading><span class="glyphicon glyphicon-ban-circle"></span> Cancel all</button> <button type=button class="btn btn-danger btn-s" ng-click=uploader.clearQueue() ng-disabled=!uploader.queue.length><span class="glyphicon glyphicon-trash"></span> Remove all</button></div></div></div></div></div></div><div class="modal-footer bmd-border-green-100"><button type=button class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss=modal>Cancel</button> <button type=button ng-click=save() class="btn btn-success bmd-ripple">Save</button></div></div></div></div><div id=commentAddModal class="modal fade" role=dialog ng-controller=BlogCreatController><div class="modal-dialog bmd-modal-dialog"><div class="modal-content bmd-border-success"><div class="modal-header bmd-bg-success"><button type=button class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss=modal aria-hidden=true>×</button><h4 class="modal-title bmd-text-green-100">Add New Comment</h4></div><div class=modal-body><div class=row><div class=col-md-3><h3>Choose Image</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>User Name</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>User Name</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Comment Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Comment Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div></div><div class="modal-footer bmd-border-green-100"><button type=button class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss=modal>Cancel</button> <button type=button ng-click=save() class="btn btn-success bmd-ripple">Save</button></div></div></div></div><!-- image Dialog end --><!-- Dialog start --><div id=blogCreatModal class="modal fade" role=dialog ng-controller=BlogCreatController><div class="modal-dialog bmd-modal-dialog"><div class="modal-content bmd-border-success"><div class="modal-header bmd-bg-success"><button type=button class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss=modal aria-hidden=true>×</button><h4 class="modal-title bmd-text-green-100">Creat Blog</h4></div><div class=modal-body><div class=row><div class=col-lg-2><h5>select blog type</h5></div><div class=col-lg-6><div role=presentation class="dropdown bmd-select form-control"><a id=drop4 href="" class=dropdown-toggle data-toggle=dropdown aria-haspopup=true role=button aria-expanded=false ng-model=blogType><span class=bmd-selected-value>Home</span> <span class=caret></span></a><ul id=menu1 class=dropdown-menu role=menu aria-labelledby=drop4><li role=presentation><a role=menuitem tabindex=-1 href="" data-value=Home ng-click=changeType($event)>Home</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="Beauty In The City" ng-click=changeType($event)>Beauty In The City</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="The Romantic Power of Movies" ng-click=changeType($event)>The Romantic Power of Movies</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="Vlog Romance" ng-click=changeType($event)>Vlog Romance</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="Photographs and Love" ng-click=changeType($event)>Photographs and Love</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="Life In New York City" ng-click=changeType($event)>Life In New York City</a></li><li role=presentation><a role=menuitem tabindex=-1 href="" data-value="THE FLIPBOOK OF MONA" ng-click=changeType($event)>THE FLIPBOOK OF MONA</a></li><li role=presentation class=divider></li><li role=presentation><a role=menuitem tabindex=-1 href="">Separated link</a></li></ul><span class=bmd-bar></span></div></div></div><div class=row><div ng-switch=blogType><div ng-switch-when=Home><h1>Home</h1><div class=row><div class=col-md-3><h3>Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Choose Image</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Tags</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="Beauty In The City"><h1>Beauty In The City</h1><div class=row><div class=col-md-3><h3>Choose Image 1</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Date</h3></div><div class=col-md-9><div class=form-group><div class=bmd-field-group><input id=inputDate type=text class=bmd-input required data-dtp=dtp_xeiDE> <span class=bmd-bar></span><label class=bmd-label>Date</label><span class=bmd-field-feedback></span></div><script type=text/javascript>$('#inputDate').bootstrapMaterialDatePicker({
+                                                time: false,
+                                                format: 'DD/MM/YYYY'
+                                            });</script></div></div></div><div class=row><div class=col-md-3><h3>content_1</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Choose Image 2</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>content_2</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Video URL</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Video URL</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Sub Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Sub Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Sub Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Choose Image</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Question</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Tag</h3></div><div class=col-md-9></div></div><div class=row><div class=col-md-3><h3>Choose Comment</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="The Romantic Power of Movies"><h1>The Romantic Power of Movies</h1><div class=row><div class=col-md-3><h3>Choose Image</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Tags</h3></div><div class=col-md-9></div></div><div class=row><div class=col-md-3><h3>Category</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="Vlog Romance"><h1>Vlog Romance</h1><div class=row><div class=col-md-3><h3>Choose Image</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Tag</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="Photographs and Love"><h1>Photographs and Love</h1><div class=row><div class=col-md-3><h3>Choose Image 1</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Content</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Tag</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="Life In New York City"><h1>Life In New York City</h1><div class=row><div class=col-md-3><h3>Choose Image 1</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Date</h3></div><div class=col-md-9><div class=form-group><div class=bmd-field-group><input id=inputDate type=text class=bmd-input required data-dtp=dtp_xeiDE> <span class=bmd-bar></span><label class=bmd-label>Date</label><span class=bmd-field-feedback></span></div><script type=text/javascript>$('#inputDate').bootstrapMaterialDatePicker({
+                                                time: false,
+                                                format: 'DD/MM/YYYY'
+                                            });</script></div></div></div><div class=row><div class=col-md-3><h3>content_1</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>content_2</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Choose Image 2</h3></div><div class="col-md-9 img-body"><div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]"><img src=./assets/upload.png alt=test></div></div></div><div class=row><div class=col-md-3><h3>Video URL</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Video URL</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>content_2</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Video URL</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Video URL</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Sub Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Sub Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div class=col-md-3><h3>Question</h3></div><div class=col-md-9><text-angular ng-model=home_content ng-change=homechange(home_content)></text-angular></div></div><div class=row><div class=col-md-3><h3>Tag</h3></div><div class=col-md-9></div></div><div class=row><div class=col-md-3><h3>Choose Comment</h3></div><div class=col-md-9></div></div></div><div ng-switch-when="THE FLIPBOOK OF MONA"><h1>THE FLIPBOOK OF MONA</h1><div class=row><div class=col-md-3><h3>Title</h3></div><div class=col-md-9><div class=bmd-field-group><input type=text class=bmd-input required> <span class=bmd-bar></span><label class=bmd-label>Title</label><span class=bmd-field-feedback></span></div></div></div><div class=row><div nv-file-drop="" uploader=uploader><div class=row><div class=col-md-3><h3>Select PDF</h3><div ng-show=uploader.isHTML5><!-- <div class="well my-drop-zone" nv-file-over="" uploader="uploader">Base drop zone</div> --><div nv-file-drop="" uploader=uploader options="{ url: '/foo' }"><div nv-file-over="" uploader=uploader over-class=another-file-over-class class="well my-drop-zone">drop zone with its own settings</div></div></div><input type=file nv-file-select="" uploader=uploader class=bmd-ripple><br></div><div class=col-md-9 style="margin-bottom: 40px"><h2>Uploads only PDF</h2><h3>The queue</h3><table class=table><thead><tr><th width=50%>Name</th><th ng-show=uploader.isHTML5>Size</th><th ng-show=uploader.isHTML5>Progress</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr ng-repeat="item in uploader.queue"><td><strong>{{ item.file.name }}</strong><div ng-show=uploader.isHTML5 ng-thumb="{ file: item._file, height: 100 }"></div></td><td ng-show=uploader.isHTML5 nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td><td ng-show=uploader.isHTML5><div class=progress style="margin-bottom: 0"><div class=progress-bar role=progressbar ng-style="{ 'width': item.progress + '%' }"></div></div></td><td class=text-center><span ng-show=item.isSuccess><i class="glyphicon glyphicon-ok"></i></span> <span ng-show=item.isCancel><i class="glyphicon glyphicon-ban-circle"></i></span> <span ng-show=item.isError><i class="glyphicon glyphicon-remove"></i></span></td><td nowrap><button type=button class="btn btn-success btn-xs" ng-click=item.upload() ng-disabled="item.isReady || item.isUploading || item.isSuccess"><span class="glyphicon glyphicon-upload"></span> Upload</button> <button type=button class="btn btn-warning btn-xs" ng-click=item.cancel() ng-disabled=!item.isUploading><span class="glyphicon glyphicon-ban-circle"></span> Cancel</button> <button type=button class="btn btn-danger btn-xs" ng-click=item.remove()><span class="glyphicon glyphicon-trash"></span> Remove</button></td></tr></tbody></table></div></div></div></div><div class=row><div class=col-md-3><h3>Tag</h3></div><div class=col-md-9></div></div></div></div></div></div><div class="modal-footer bmd-border-green-100"><button type=button class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss=modal>Cancel</button> <button type=button ng-click=save() class="btn btn-success bmd-ripple">Save</button></div></div></div></div><!-- Dialog end --></body></html>
