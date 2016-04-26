@@ -1,0 +1,172 @@
+<div class="page-content">
+    <div class="life_body wrapper">
+        <div class="main_img">
+            <img src="./assets/beauty/1.png" data-toggle="modal" data-target="#imageModal">
+                <div class="life_title">
+                    <p data-toggle="modal" data-target="#textModal">
+                        The title of the post
+                    </p>
+                    <span data-toggle="modal" data-target="#dateModal">
+                        12.01.15
+                    </span>
+                </div>
+            </img>
+        </div>
+        <div class="text_1" data-toggle="modal" data-target="#contModal">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        </div>
+        <div class="life_cell" ng-repeat="item in [1, 2]">
+            <div class="cell_text">
+                <div class="title" data-toggle="modal" data-target="#textModal">
+                    Idea #{{item}}: Harverst some...
+                </div>
+                <div class="content" data-toggle="modal" data-target="#contModal">
+                    There is a long list of benefits of sharing a regular date night with you partner! Couples who take this time to nurture their relationshop with one another are more likely to enjoy high-quality relationships. Regular dates offer couples the opportunity to enjoy each... pany and let go of the stresses that come with day-today life.
+                </div>
+            </div>
+            <div class="cell_video" data-toggle="modal" data-target="#textModal">
+                <iframe allowfullscreen="" frameborder="0" height="345" src="http://www.youtube.com/embed/bIAMrcMOlsA?autoplay=0&cc_load_policy=1&loop=1&playlist=bIAMrcMOlsA" width="100%">
+                </iframe>
+            </div>
+        </div>
+        <div class="que" data-toggle="modal" data-target="#contModal">
+            Did any news about the future of work catch your attention this week?<br>
+            Tell us about it in the comments section below.
+        </div>
+        <div class="comment">
+            <div class="photo">
+                <img src="./assets/beauty/man.png" data-toggle="modal" data-target="#imageModal">
+                </img>
+            </div>
+            <div class="comment_text">
+                <div class="title" data-toggle="modal" data-target="#textModal">
+                    Mellisa Dempsey
+                </div>
+                <div class="sub_title" data-toggle="modal" data-target="#textModal">
+                    Freelance Contributor
+                </div>
+                <div class="content" data-toggle="modal" data-target="#contModal">
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="imageModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Choose Image</h3>
+                    </div>
+                    <div class="col-md-9 img-body">
+                        <div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]">
+                            <img src="./assets/upload.png" alt="test">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="textModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Title</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="bmd-field-group">
+                            <input type="text" class="bmd-input" required="">
+                            <span class="bmd-bar"></span>
+                            <label class="bmd-label">Title</label>
+                            <span class="bmd-field-feedback"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dateModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Date</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="bmd-field-group">
+                                <input id="inputDate" type="text" class="bmd-input" required="" data-dtp="dtp_xeiDE">
+                                <span class="bmd-bar"></span>
+                                <label class="bmd-label">Date</label>
+                                <span class="bmd-field-feedback"></span>
+                            </div>
+                            <script type="text/javascript">
+                            $('#inputDate').bootstrapMaterialDatePicker({
+                                time: false,
+                                format: 'DD/MM/YYYY'
+                            });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>Content</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <text-angular ng-model="home_content" ng-change="homechange(home_content)"></text-angular>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

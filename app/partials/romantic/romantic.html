@@ -1,0 +1,259 @@
+<div class="page-content">
+    <div class="rom_body wrapper">
+        <div class="filter_body">
+            <div class="filter_cell">
+                <div class="odd ">
+                </div>
+                <div class="btn bmd-ripple bodd">
+                    Happy Full Moon
+                </div>
+            </div>
+            <div class="filter_cell">
+                <div class="even active">
+                </div>
+                <div class="btn bmd-ripple beven">
+                    Happy Full Moon
+                </div>
+            </div>
+            <div class="filter_cell">
+                <div class="odd">
+                </div>
+                <div class="btn bmd-ripple bodd">
+                    Happy Full Moon
+                </div>
+            </div>
+            <div class="filter_cell">
+                <div class="even">
+                </div>
+                <div class="btn bmd-ripple beven">
+                    Happy Full Moon
+                </div>
+            </div>
+        </div>
+        <!-- items being paged -->
+        <div class="main_body">
+            <div class="con_body">
+                <div class="rom_cell" ng-repeat="item in rom.items">
+                    <div class="cell_text" data-toggle="modal" data-target="#contModal">
+                        <div class="title">
+                            Idea #{{item}}: Harverst some...
+                        </div>
+                        <div class="content">
+                            There is a long list of benefits of sharing a regular date night with you partner!
+                        </div>
+                    </div>
+                    <div class="cell_img">
+                        <img src="./assets/rom/1.png" data-toggle="modal" data-target="#imageModal">
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="title">
+                    Social Counters
+                </div>
+                <div class="googlepp">
+                    <span class="icon">
+                    </span>
+                    <span class="text">
+                        Fans
+                    </span>
+                </div>
+                <div class="twitter">
+                    <span class="icon">
+                    </span>
+                    <span class="text">
+                        Followers
+                    </span>
+                </div>
+                <div class="pin">
+                    <span class="icon">
+                    </span>
+                    <span class="text">
+                        Subscribers
+                    </span>
+                </div>
+                <div class="title">
+                    See More
+                </div>
+                <div class="social_group">
+                    <span class="so_1 bmd-ripple">
+                    </span>
+                    <span class="so_2 bmd-ripple">
+                    </span>
+                    <span class="so_3 bmd-ripple">
+                    </span>
+                    <span class="so_4 bmd-ripple">
+                    </span>
+                    <span class="so_5 bmd-ripple">
+                    </span>
+                    <span class="so_6 bmd-ripple">
+                    </span>
+                    <span class="so_7 bmd-ripple">
+                    </span>
+                    <span class="so_8 bmd-ripple">
+                    </span>
+                    <span class="so_9 bmd-ripple">
+                    </span>
+                    <span class="so_10 bmd-ripple">
+                    </span>
+                    <span class="so_11 bmd-ripple">
+                    </span>
+                </div>
+                <div class="title">
+                    Tags
+                </div>
+                <div class="tag_body">
+                    <a class="btn btn-default bmd-ripple bmd-ink-grey-400" ng-repeat="tag in rom.tags">
+                        {{tag}}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination" ng-if="rom.pager.pages.length">
+            <li ng-class="{disabled:rom.pager.currentPage === 1}">
+                <a ng-click="rom.setPage(1)">
+                    First
+                </a>
+            </li>
+            <li ng-class="{disabled:rom.pager.currentPage === 1}">
+                <a ng-click="rom.setPage(rom.pager.currentPage - 1)">
+                    Previous
+                </a>
+            </li>
+            <li ng-class="{active:rom.pager.currentPage === page}" ng-repeat="page in rom.pager.pages">
+                <a ng-click="rom.setPage(page)">
+                    {{page}}
+                </a>
+            </li>
+            <li ng-class="{disabled:rom.pager.currentPage === rom.pager.totalPages}">
+                <a ng-click="rom.setPage(rom.pager.currentPage + 1)">
+                    Next
+                </a>
+            </li>
+            <li ng-class="{disabled:vlog.pager.currentPage === vlog.pager.totalPages}">
+                <a ng-click="vlog.setPage(vlog.pager.totalPages)">
+                    Last
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="imageModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Choose Image</h3>
+                    </div>
+                    <div class="col-md-9 img-body">
+                        <div class="col-md-2 up-image" ng-repeat="item in uploadedImgs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]">
+                            <img src="./assets/upload.png" alt="test">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="textModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Title</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="bmd-field-group">
+                            <input type="text" class="bmd-input" required="">
+                            <span class="bmd-bar"></span>
+                            <label class="bmd-label">Title</label>
+                            <span class="bmd-field-feedback"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dateModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Date</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <div class="bmd-field-group">
+                                <input id="inputDate" type="text" class="bmd-input" required="" data-dtp="dtp_xeiDE">
+                                <span class="bmd-bar"></span>
+                                <label class="bmd-label">Date</label>
+                                <span class="bmd-field-feedback"></span>
+                            </div>
+                            <script type="text/javascript">
+                            $('#inputDate').bootstrapMaterialDatePicker({
+                                time: false,
+                                format: 'DD/MM/YYYY'
+                            });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contModal" class="modal fade" role="dialog" ng-controller="BlogCreatController">
+    <div class="modal-dialog bmd-modal-dialog">
+        <div class="modal-content bmd-border-success">
+            <div class="modal-header bmd-bg-success">
+                <button type="button" class="close btn-link bmd-flat-btn bmd-flat-btn-light" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title bmd-text-green-100">Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>Content</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <text-angular ng-model="home_content" ng-change="homechange(home_content)"></text-angular>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bmd-border-green-100">
+                <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="save()" class="btn btn-success bmd-ripple">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
